@@ -2,12 +2,191 @@
 <html dir="ltr" lang="en" class="no-js">
 <head>
   <link rel="stylesheet" href="dist/css/main.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
 </head>
 <body>
-  <h1>Welcome</h1>
-  <div class="foo"></div>
-  <div class="Tour"></div>
+  <div class="header">
+    <img class="header_logo" src="dist/images/logo.png" alt="Logo Customadress"/>
+  </div>
+  <div class="offset">
+    <div class="block-frases">
+      <div class="carousel">
+        <div class="carousel-inner">
+          <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+          <div class="carousel-item">
+            <div class="item-right">
+              <p><em>Customadress:</em></p>
+              <p>um novo conceito em criação e vende de vestidos para festas</p>
+            </div>
+            <div class="item-left">
+              <p>Reunimos a <em>praticidade</em> do comércio eletrônico com a <em>exclusividade</em> de um personal sylist, que atende quando e onde a cliente desejar.</p>
+            </div>
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item">
+            <div class="item-right">
+              <p>A alta qualidade é a assinatura da <em>Customadress</em> </p>
+              <p>E tudo por um preço justo.</p>
+            </div>
+            <div class="item-left">
+              <p>A partir de <em>$800</em>, é possível <em>comprar</em> a maioria dos modelos produzidos. No mercado, esse é o valor médio de um aluguel. Mas aqui, o vestido é seu e você <em>não precisa sair de casa</em>.</p>
+            </div>
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item">
+            <div class="item-right">
+              <p><em>Armazenamos suas medidas:</em></p>
+              <p>Os nossos stylists cadastram suas medidas em nosso sistema.</p>
+            </div>
+            <div class="item-left">
+              <p>Com isso, você pode solicitar novos vestidos sem precisar repetir a medição.</p>
+            </div>
+          </div>
+          <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+          <label for="carousel-2" class="carousel-control next control-1">›</label>
+          <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+          <label for="carousel-3" class="carousel-control next control-2">›</label>
+          <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+          <label for="carousel-1" class="carousel-control next control-3">›</label>
+          <ol class="carousel-indicators">
+            <li>
+              <label for="carousel-1" class="carousel-bullet">•</label>
+            </li>
+            <li>
+              <label for="carousel-2" class="carousel-bullet">•</label>
+            </li>
+            <li>
+              <label for="carousel-3" class="carousel-bullet">•</label>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="block-comofunciona">
+      <div class="step">
+        <div class="number">1</div>
+        <div class="step-desc">
+          Preencha um breve formulário e conte um pouco sobre você e seu vestido.
+        </div>
+      </div>
+      <div class="step">
+        <div class="number">2</div>
+        <div class="step-desc">
+          Agende uma visita sem compromisso: Nossos Stylists irão te atender onde você preferir no horário de sua escolha.
+        </div>
+      </div>
+      <div class="step">
+        <div class="number">3</div>
+        <div class="step-desc">
+          Crie o vestido dos seus sonhos: Tiramos suas medidas e garantimos um caimento único e perfeito exclusivamente para o seu corpo. Tudo isso por um preço justo!
+        </div>
+      </div>
+      <div class="step">
+        <div class="number">4</div>
+        <div class="step-desc">
+          Selecione a forma de pagamento com nossos Stylists, acompanhe a produção por e-mail e receba o vestido onde quiser com rapidez e qualidade.
+        </div>
+      </div>
+    </div>
+    <div class="block-categorias">
+      <div class="heading">CATEGORIAS</div>
+      <div class="categorias-row">
+        <div class="categorias-container">
+          <div class="categorias-title">
+            CLASSIC
+          </div>
+          <div class="categorias-desc">
+            <p>A partir de R$500</p>
+            <p>Modelos básicos que valorizam sua essência.</p>
+          </div>
+        </div>
+        <div class="categorias-container">
+          <div class="categorias-title">
+            CUSTOM
+          </div>
+          <div class="categorias-desc">
+            <p>A partir de R$800</p>
+            <p>Modelos inspiradores com um toque do seu estilo.</p>
+          </div>
+        </div>
+        <div class="categorias-container">
+          <div class="categorias-title">
+            CLASSIC
+          </div>
+          <div class="categorias-desc">
+            <p>Valores sob consulta</p>
+            <p>Modelos originais, com toda a sua personalidade.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="block-form">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="form-title">Vamos começar</div>
+          <div class="form-desc">
+            Por favor, forneça algumas informações iniciais. Em até 24 horas, entraremos em contato com você para dar continuidade ao atendiemento.
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="alert alert-success">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Successfully submitted!</strong> The form is valid.
+          </div>
+          <form role="form">
+            <div class="form-group">
+              <label for="nome">nome:</label>
+              <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone:</label>
+              <input type="text" class="form-control" id="telefone" name="telefone">
+            </div>
+            <div class="form-group">
+              <label for="data">Qual é a data do seu evento?</label>
+              <input type="text" class="form-control" id="data" name="data">
+            </div>
+            <div class="form-group">
+              <label for="endereco">Endereço:</label>
+              <input type="text" class="form-control" id="endereco" name="endereco">
+            </div>
+            <div class="form-group">
+              <label for="cep">CEP:</label>
+              <input type="text" class="form-control" id="cep" name="cep">
+            </div>
+            <div class="form-group">
+              <label for="modelo">Já tem o seu modelo de vestido?</label>
+              <input type="text" class="form-control" id="modelo" name="modelo">
+            </div>
+            <button type="submit" class="btn btn-default">Subscribe</button>
+          </form>
+          <div class="form-obs">
+            Fique tranquila. Nossa equipe responderá o mais breve possível.
+          </div>
+        </div>
 
+      </div>
+    </div>
+    <div class="footer">
+        <div class="footer-row">
+          <div class="normal"> COMO FUNCIONA</div>
+          <div class="normal"> CATEGORIAS </div>
+          <div class="action-pink"> AGENDE UM STYLIST </div>
+          <div class="action-blue"> ENVIE SUAS MEDIDAS </div>
+        </div>
+        <div class="footer-row">
+          <div class="atendimento">
+            <div class="email-atendimento">ATENDIMENTO@CUSTOMADRESS.COM</div>
+            <div class="tel-atendimento">+31 3999-8877</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
   <script src="dist/js/app.min.js"></script>
 </body>
 </html>
