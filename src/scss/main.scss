@@ -1,11 +1,20 @@
 @import 'variables';
 @import 'utilities';
+@import 'categorias';
+@import 'funcionamento';
+@import 'footer';
+@import 'form';
+
+b {
+  font-family: SanFranciscoText-Heavy;
+}
 
 body {
   display: flex;
   margin: 0px;
   height: 100vh;
-  background: $dark-background;
+  background: $dark;
+  font-family: SanFranciscoDisplay-Regular;
 }
 
 .offset {
@@ -23,7 +32,7 @@ body {
   height: 150px;
   font-weight: bold;
   text-align: center;
-  background: $dark-background;
+  background: $dark;
   transition: .3s;
   // header shrinks when .small added to .header
   &.small {
@@ -67,7 +76,7 @@ body {
   position: relative;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
   margin-top: 26px;
-  background: $dark-background;
+  background: $dark;
 }
 
 .carousel-inner {
@@ -82,7 +91,7 @@ body {
 }
 
 .carousel-item {
-  width: 100vw;
+  width: 100%;
   max-width: 1300px;
   position: absolute;
   opacity: 0;
@@ -90,17 +99,44 @@ body {
   transition: opacity 0.6s ease-out;
   display: flex;
   min-height: 200px;
+  font-family: SanFranciscoDisplay-Light;
+
+  font-size: 14px;
+
+  @media only screen and (min-width:500px){
+    font-size: 16px;
+  }
+
+  @media only screen and (min-width:769px){
+    font-size: 20px;
+  }
 
   .item-right {
-    font-family: SanFranciscoDisplay-Light;
-    background: $dark-background;
+    background: $dark;
+    color: $pink;
     flex: 1;
+    padding: 32px;
+    padding-right: 8px;
+    padding-top: 16px;
+    padding-bottom: 40px;
+    @media only screen and (min-width:769px){
+      padding: 40px;
+      padding-left: 80px;
+    }
   }
 
   .item-left {
-    font-family: Foxhole-Regular;
     background: $blue;
+    color: $dark;
     flex: 1;
+    padding: 32px;
+    padding-left: 8px;
+    padding-top: 16px;
+    padding-bottom: 40px;
+    @media only screen and (min-width:769px){
+      padding: 40px;
+      padding-right: 80px;
+    }
   }
 }
 
@@ -120,14 +156,17 @@ body {
   height: 40px;
   line-height: 35px;
   position: absolute;
-  top: 50%;
+  top: 85%;
+  @media only screen and (min-width:769px){
+    top: 50%;
+  }
   -webkit-transform: translate(0, -50%);
   cursor: pointer;
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   text-align: center;
   width: 40px;
-  z-index: 10;
+  z-index: 20;
 }
 
 .carousel-control.prev {

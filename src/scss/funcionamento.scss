@@ -1,0 +1,62 @@
+@import 'variables';
+
+.block-comofunciona {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: $pink;
+    color: $dark;
+    border-bottom: 8px;
+    border-bottom-color: #fff;
+    border-bottom-style: solid;
+
+    .heading {
+        background: $dark;
+        width: 100%;
+        color: $blue;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: SanFranciscoText-Light;
+        font-size: 18px;
+    }
+
+    .group {
+        display: flex;
+        flex: 1;
+        min-width: 400px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        .step {
+            display: flex;
+            flex: 1;
+            min-width: 200px;
+            align-items: center;
+            justify-content: center;
+            padding: 18px;
+            
+            .number {
+                width: 30px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                font-family: Foxhole-Regular;
+                color: #fff;
+                font-size: 100px;
+                padding: 12px;
+                margin-top: -50px;
+            }
+
+            .step-desc {
+                font-size: 16px;
+                flex: 1;
+                font-family: SanFranciscoText-Regular;
+            }
+        }
+    }   
+
+}
